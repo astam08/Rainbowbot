@@ -26,7 +26,7 @@ class Bot {
     processMessage(msg) {
         if(msg.content.startsWith(">addrole")) {
             for(var role of msg.mentions.roles.array()) {
-                msg.reply("Added " + role + " to list of rainbow roles.");
+                msg.reply("Sukses  " + role + " Rainbow 🌈 .");
                 
                 this.addRainbowRole(msg.guild.id, role.id);
             }
@@ -57,7 +57,7 @@ class Bot {
         
         for(var existingRole of this.servers[guild]) {
             if(existingRole == role) {
-                return "That role has already been added.";
+                return "Role sudah ada di list 🌈.";
             }
         }
         
